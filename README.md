@@ -3,6 +3,8 @@
 ###### Emily K. Sanders, DSB-318, April 19, 2024
 ---
 
+![](images/duffy-house.png)
+
 <img src='https://git.generalassemb.ly/eksanders/Sanders_DSB318_Project_2/blob/ec9d60819607e4f9d2e853958f1e3e1df2918c23/images/duffy-house.png'>
 
 ###### A house in Ames, Iowa. Source: [Zillow](https://www.zillow.com/homedetails/1615-Duff-Ave-Ames-IA-50010/115840126_zpid/)
