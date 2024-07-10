@@ -4,9 +4,6 @@
 ---
 
 ![](images/duffy-house.png)
-
-<img src='https://git.generalassemb.ly/eksanders/Sanders_DSB318_Project_2/blob/ec9d60819607e4f9d2e853958f1e3e1df2918c23/images/duffy-house.png'>
-
 ###### A house in Ames, Iowa. Source: [Zillow](https://www.zillow.com/homedetails/1615-Duff-Ave-Ames-IA-50010/115840126_zpid/)
 
 ## Problem Statement
@@ -25,15 +22,14 @@ The commissioners of this project provided me with a dataset that was orignally 
 A data dictionary is provided at the bottom of this readme.
 
 ## Results
-<img src='https://git.generalassemb.ly/eksanders/Sanders_DSB318_Project_2/blob/ec9d60819607e4f9d2e853958f1e3e1df2918c23/images/sale-price-histogram.png'>
+![](images/sale-price-histogram.png)
 The distribution of home prices in the dataset can be seen above.  Skewed data such as these - with a tail extending assymetrically towards the right - can be difficult to model well with linear techniques, but this is not always catastrophically detrimental.  
 
 My most successful model was a LASSO regression with alpha of 1.  When tested on novel data, this model accounted for approximately 92% of the variation in home prices (*R-squared*), and made predictions with an average distance of +/-\$22,695.24 from the true price (*RMSE*).  This is a sizable improvement over the current baseline model, which averages a distance of \$79,975.12.  
 
 To assess the quality of this model, I additionally plotted the residuals - the distance between the actual price and the predicted price.  In an ideal model, these residuals would form a bell curve centered on zero.  As can be seen in the graph below, the residuals of my LASSO model, while not perfectly curve-shaped or symmetrical, are approximatey centered on 0, and form a rough bell shape.  This is a very promising sign for the model's integrity and utility.
 
-<img src='https://git.generalassemb.ly/eksanders/Sanders_DSB318_Project_2/blob/main/images/resids-hist.png'>
-
+![](images/resids-hist.png)
 *Residuals are more or less normally distributed with a mean of 0.*
 
 ## Conclusions
