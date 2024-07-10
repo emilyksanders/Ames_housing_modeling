@@ -1,0 +1,27 @@
+feature,Nas,settled,meaning,,,,,,
+Alley,1911,y,no alley,,nothing else to compare against,,,,
+Bsmt Cond,55,y,all 55 w/i no_basements subset; these houses just don't have basements; fine as is,,,,,,
+Bsmt Exposure,58,"n, may be impossible","55 no basements, should be NA",,,,,,3 real missing values associated with real basements (can we safely conclude no exposure?)
+Bsmt Full Bath,2,y,Bsmt Qual is also NA; no basement,,,,,,same rows V
+Bsmt Half Bath,2,y,Bsmt Qual is also NA; no basement,,,,,,same rows ^
+Bsmt Qual,55,y,no basement,,,,,,
+Bsmt Unf SF,1,y,PID 903230120,,,"PID 903230120 has no basement, change this NA to 0",,,
+BsmtFin SF 1,1,y,PID 903230120,,,"PID 903230120 has no basement, change this NA to 0",,,
+BsmtFin SF 2,1,y,PID 903230120,,,"PID 903230120 has no basement, change this NA to 0",,,
+BsmtFin Type 1,55,y,all 55 w/i no_basements subset; these houses just don't have basements; fine as is,,,,,,
+BsmtFin Type 2,56,"n, may be impossible","55 no basements, should be NA",,,,,,"PID 528142130 has a basement, type 2 SF is populated, but this column is NA - the SF columns are weird tho, it implies that their basement is PERFECTLY split between finished and unfinished space"
+Fence,1651,y,no fence,,,no related features to check against,,,
+Fireplace Qu,1000,y,no fireplace,,,exactly 1000 houses have a 0 in Fireplaces; 100% overlap,,,
+Garage Area,1,"n, may be impossible",true missing value; have 113 0s,,,,,,PID 910201180 has garage but is NA
+Garage Cars,1,"n, may be impossible",true missing value; have 113 0s,,,,,,PID 910201180 has garage but is NA
+Garage Cond,114,"n, may be impossible",113 no garages,,,,,,PID 910201180 has garage but is NA
+Garage Finish,114,"n, may be impossible",113 no garages,,,,,,PID 910201180 has garage but is NA
+Garage Qual,114,"n, may be impossible",113 no garages,,,,,,PID 910201180 has garage but is NA
+Garage Type,113,y,no garage,,,,,,PID 910201180 lists detached
+Garage Yr Blt,114,"n, may be impossible",113 no garages,,,,,,PID 910201180 has garage but is NA
+Lot Frontage,330,"n, may be impossible","only 8 have alleys, all are listed as having street access. They definitionally must have frontage",,,,,,
+Mas Vnr Area,22,not yet,Nas+0s = 1235; the other 5 all have values listed for Area. Should I change Type to 'other' or something?,,,,,,
+Mas Vnr Type,1240,not yet,no masonry,,,,,,
+Misc Feature,1986,y,no weird stuff,,,,,,
+Pool QC,2042,y,no pool,,100% overlap with 'Pool Area'==0,,,,
+Total Bsmt SF,1,y,PID 903230120,,,"PID 903230120 has no basement, change this NA to 0",,,
